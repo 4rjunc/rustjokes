@@ -46,7 +46,7 @@ cargo build
 ## Running Locally
 
 ```bash
-shuttle run
+cargo shuttle run
 ```
 
 ## Endpoints
@@ -71,8 +71,15 @@ shuttle run
 # Home endpoint
 curl http://localhost:8000/
 
+# Hosted home endpoint
+curl https://rustjokes-jk76.shuttle.app
+
 # Joke endpoint
 curl http://localhost:8000/joke
+
+# Hosted joke endpoint
+curl https://rustjokes-jk76.shuttle.app/joke
+
 ```
 
 ### Using httpie
@@ -81,8 +88,14 @@ curl http://localhost:8000/joke
 # Home endpoint
 http GET http://localhost:8000/
 
+# Hosted home endpoint
+http https://rustjokes-jk76.shuttle.app
+
 # Joke endpoint
 http GET http://localhost:8000/joke
+
+# Hosted joke endpoint
+http https://rustjokes-jk76.shuttle.app/joke
 ```
 
 ### Example Response for Joke Endpoint
