@@ -1,0 +1,9 @@
+[build]
+include = [
+  "jokes.json",
+]
+
+[deploy]
+include = [
+  "jokes.json",
+]
